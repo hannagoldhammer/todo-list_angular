@@ -1,0 +1,23 @@
+
+<div class="mainDiv">
+  <h1>So many things to do</h1>
+  <input
+    autofocus
+    placeholder="What do I have to do?"
+    class="input"
+    type="text"
+    [(ngModel)]="searchValue"
+    #todo (keyup.enter)="addTodo(todo.value)">
+  <button (click)="addTodo(todo.value)">Add todo</button>
+
+  <div *ngIf="listOfTodos.length > 0" [class.showDiv]="showDiv">
+    <div *ngFor="let todo of listOfTodos">
+      <app-print-todo
+        (delete)="deleteFunction(todo)"
+        [class]="todo.complete ? finishedTodo : unFinishedTodo"
+        [todo]="todo">
+    </app-print-todo>
+  </div>
+  <button *ngIf="listOfTodos.length > 0" (click)="sortFunction()">Sort list</button>
+  </div>
+</div>

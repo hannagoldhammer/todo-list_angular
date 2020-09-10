@@ -1,0 +1,36 @@
+.mainDiv{
+  text-align: center;
+  .input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 5px;
+    padding: 3px;
+  }
+
+  .finishedTodo{
+    text-decoration: line-through;
+  }
+
+  .unfinishedTodo{
+    background-color: burlywood;
+  }
+
+  .showDiv{
+    padding: 30px;
+    border: solid 1px white;
+    border-radius: 5px;
+    width: 500px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    margin-top: 50px;
+  }
+
+  button{
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 10px;
+    margin: 0 10px;
+  }
+}

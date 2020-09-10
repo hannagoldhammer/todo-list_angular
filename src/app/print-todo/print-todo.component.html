@@ -1,0 +1,9 @@
+<div class="printTodos">
+  <div class="nameOfPrintedTodoDiv">
+    {{ todo.title }}
+  </div>
+  <div class="buttonsInDiv">
+    <input type="checkbox" (change)="checkedTodo(todo)">
+    <i class="far fa-trash-alt fa-lg" (click)="deleteEmit()"></i>
+  </div>
+</div>

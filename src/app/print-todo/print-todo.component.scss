@@ -1,0 +1,21 @@
+.printTodos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 100px;
+  
+  .nameOfPrintedTodoDiv{
+    text-align: left;
+    font-size: large;
+    margin-top: 7px;
+  }
+
+  .buttonsInDiv{
+    text-align: right;
+    right: 20px;
+  }
+  input{
+    transform: scale(1.5);
+    margin: 10px;
+  }
+}
